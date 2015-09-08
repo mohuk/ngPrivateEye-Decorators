@@ -1,0 +1,17 @@
+{
+  "name": "ngPrivateEye-Decorator",
+  "version": "0.0.0",
+  "description": "Tap the calls and increase your intelligence",
+  "keywords": [
+    "Angular",
+    "JS",
+    "Decorators"
+  ],
+  "authors": [
+    "Mohammad Umair Khan"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.5"
+  }
+}
