@@ -5,14 +5,14 @@
 	angular.module('app')
 		.factory('commDevice', commDevice);
 
-	function commDevice(){
+	function commDevice($log){
 
 		return {
 			send: send
 		};
 
 		function send(sender, message, receiver){
-			console.log('message sent');
+			$log.info('sender: ' + sender, 'receiver: ' + receiver, 'message: ' + message);
 		}
 
 	}

@@ -1,0 +1,27 @@
+{
+  "name": "ngPrivateEye-Decorators",
+  "version": "0.0.0",
+  "description": "Tap the calls and increase your intelligence",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohuk/ngPrivateEye-Decorators.git"
+  },
+  "keywords": [
+    "AngularJS",
+    "Decorators"
+  ],
+  "author": "Mohammad Umair Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohuk/ngPrivateEye-Decorators/issues"
+  },
+  "homepage": "https://github.com/mohuk/ngPrivateEye-Decorators",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0"
+  }
+}
