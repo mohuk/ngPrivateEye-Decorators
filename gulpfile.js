@@ -8,14 +8,14 @@ gulp.task('connect', function() {
     port: 8000
   });
 });
- 
+
 gulp.task('all', function () {
-  gulp.src('./src/*.*')
+  gulp.src('./src/scripts/*.*')
     .pipe(connect.reload());
 });
- 
+
 gulp.task('watch', function () {
-  gulp.watch(['./src/*.*'], ['all']);
+  gulp.watch(['./src/scripts/*.*'], ['all']);
 });
- 
+
 gulp.task('default', ['connect', 'watch']);

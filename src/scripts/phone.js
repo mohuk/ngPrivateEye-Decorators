@@ -5,14 +5,20 @@
 	angular.module('app')
 		.factory('commDevice', commDevice);
 
-	function commDevice($log){
+	function commDevice($log, $mdToast){
 
 		return {
 			send: send
 		};
 
-		function send(sender, message, receiver){
-			$log.info('sender: ' + sender, 'receiver: ' + receiver, 'message: ' + message);
+		function send(sender, receiver, text){
+			$log.info('sender: ' + sender, 'receiver: ' + receiver, 'text: ' + text);
+      $mdToast.show(
+        $mdToast.simple()
+          .content('Sent to: ' + receiver)
+          .position('bottom right')
+          .hideDelay(3000)
+      );
 		}
 
 	}

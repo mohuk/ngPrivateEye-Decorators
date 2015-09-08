@@ -6,10 +6,29 @@
   </head>
   <body ng-app="app">
     <div ng-controller="commConsoleCtrl as vm">
-      Sender: <input type="text" ng-model="vm.message.sender">
-      Receiver: <input type="text" ng-model="vm.message.receiver">
-      Text: <textarea ng-model="vm.message.text"></textarea>
-      <input type="button" ng-click="vm.send(vm.message)" value="Send">
+    <md-toolbar class="md-primary">
+      <h1 class="md-toolbar-tools">
+        Crub Messenger
+      </h1>
+    </md-toolbar>
+    <md-content layout-padding>
+      <form name="crub" novalidate>
+        <md-input-container>
+          <label>Sender</label>
+          <input name="sender" ng-model="vm.message.sender">
+        </md-input-container>
+        <md-input-container>
+          <label>Receiver</label>
+          <input name="receiver" ng-model="vm.message.receiver">
+        </md-input-container>
+        <md-input-container>
+          <label>Text</label>
+          <input type="text" name="text" ng-model="vm.message.text">
+        </md-input-container>
+        <md-button class="md-raised" ng-click="vm.clear()">Clear</md-button>
+        <md-button class="md-raised md-primary" ng-click="vm.send(vm.message)">Send</md-button>
+      </form>
+    </md-content>
     </div>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-aria/angular-aria.js"></script>

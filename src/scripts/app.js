@@ -3,13 +3,14 @@
 	'use strict';
 
 	angular
-    .module('app', [])
+    .module('app', ['ngMaterial'])
     .controller('commConsoleCtrl', commConsoleCtrl);
 
   function commConsoleCtrl(commDevice){
     var vm = this;
 
     vm.send = send;
+    vm.clear = clear;
 
     ///////////////
 
